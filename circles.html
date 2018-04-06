@@ -11,10 +11,13 @@
 <script type="text/paperscript" canvas="myCanvas">
 	
 	
-	for(vafr x=o; x<1000;x=x+100)
+	for(var x=o; x<1000;x=x+100)
 	{
-	var myCircle = new Path.Circle(new Point(x, 70), 10);
+	for(var y=0;y<1000;y+=100)
+	{
+	var myCircle = new Path.Circle(new Point(x, y), 10);
      myCircle.fillColor = 'black';
+}
 }
 	 </script>
 </head>
