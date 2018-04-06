@@ -11,14 +11,18 @@
 <script type="text/paperscript" canvas="myCanvas">
 	
 	
-	for(var x=o; x<1000;x=x+100)
-	{
-	for(var y=0;y<1000;y+=100)
-	{
-	var myCircle = new Path.Circle(new Point(x, y), 10).fillColor = 'purple';
+function onKeyDown(event) {
+	
+	var maxPoint= new Point(view.size.width,view.size.height);
+var randomPoint= Point.random();
+var point=maxPoint*randomPoint;
+	
+	
+	new Path.Circle(point,10).fillColor="yellow";
+	
 }
-}
-	 </script>
+
+	  </script>
 </head>
 <body>
 <canvas id="myCanvas" resize></canvas>
